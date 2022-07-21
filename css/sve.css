@@ -1,0 +1,47 @@
+.omotacdijete{
+    
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  justify-content: center;
+}
+
+.omotac{
+    
+    display: flex;
+justify-content: center;
+    background-color: white;
+    padding: 50px 0;
+}
+
+.gumb{
+    background-color: lightblue;
+    border-radius: 30px;
+    box-shadow: 2px 2px;
+}
+
+.gumb:hover{
+    background-color: lightgray;
+}
+
+.vanjski{
+    border-width: 2px;
+}
+
+input {
+  margin: 5px;
+}
+
+select{
+    background-color: lightblue;
+    border-radius: 20px;
+    box-shadow: 2px 2px;
+}
+
+option{
+    background-color: lightblue;
+    border-radius: 20px;
+    box-shadow: 2px 2px;
+}
+

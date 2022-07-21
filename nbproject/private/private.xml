@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="3">
+        <file>
+            <url>js/provjeraPrijava.js</url>
+            <bookmark id="3">
+                <name/>
+                <line>0</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>php/prijava_provjera.php</url>
+            <bookmark id="2">
+                <name/>
+                <line>27</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/WebDiP_03/Matea%20Ilisevic/Trčanje/php/rang_lista_PRIKAZ.php</file>
+            <file>file:/home/WebDiP_03/Matea%20Ilisevic/Trčanje/css/zaglavlje.css</file>
+            <file>file:/home/WebDiP_03/Matea%20Ilisevic/Trčanje/js/provjeraRegistracija.js</file>
+            <file>file:/home/WebDiP_03/Matea%20Ilisevic/Trčanje/templates/validacija_koda.tpl</file>
+            <file>file:/home/WebDiP_03/Matea%20Ilisevic/Trčanje/templates/rang_lista.tpl</file>
+            <file>file:/home/WebDiP_03/Matea%20Ilisevic/Trčanje/php/registracija_provjera.php</file>
+            <file>file:/home/WebDiP_03/Matea%20Ilisevic/Trčanje/php/prijava.php</file>
+            <file>file:/home/WebDiP_03/Matea%20Ilisevic/Trčanje/php/registriraj.php</file>
+            <file>file:/home/WebDiP_03/Matea%20Ilisevic/Trčanje/css/sve.css</file>
+            <file>file:/home/WebDiP_03/Matea%20Ilisevic/Trčanje/js/utrke.js</file>
+            <file>file:/home/WebDiP_03/Matea%20Ilisevic/Trčanje/templates/statistika_reg.tpl</file>
+            <file>file:/home/WebDiP_03/Matea%20Ilisevic/Trčanje/dokumentacija.html</file>
+            <file>file:/home/WebDiP_03/Matea%20Ilisevic/Trčanje/templates/zaglavlje.tpl</file>
+            <file>file:/home/WebDiP_03/Matea%20Ilisevic/Trčanje/js/utrka.js</file>
+            <file>file:/home/WebDiP_03/Matea%20Ilisevic/Trčanje/php/prijava_na_utrku_pokazi_buduce_etape.php</file>
+            <file>file:/home/WebDiP_03/Matea%20Ilisevic/Trčanje/php/registracija.php</file>
+            <file>file:/home/WebDiP_03/Matea%20Ilisevic/Trčanje/templates/registracija.tpl</file>
+            <file>file:/home/WebDiP_03/Matea%20Ilisevic/Trčanje/templates/prijava.tpl</file>
+            <file>file:/home/WebDiP_03/Matea%20Ilisevic/Trčanje/templates/prijava_na_utrku.tpl</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Dokumentacija</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h2>Opis projektnog zadatka</h2>
+            <div>
+                Tema zadatka je trčanje.
+                <h3>Administrator</h3>
+                Administrator ima ovlasti poput dodavanja novih država, izmjene država, dodjele oderatora državi, definiranje novih utrka za državu, pregledavanja 
+                dnevnika, statistike dnevnika. 
+                <h3>Moderator</h3>
+                Moderator može vidjeti koje države su mu dodjeljene što automatski znači da može vidjeti i koje utrke vodi, za svoje utrke može definirati etape, pregledavati, ažurirati i slično.
+                Vidi statistiku završenosti svojih etapa.
+                <h3>Registrirani korisnik</h3>
+                Registrirani korisnik se može prijaviti na dostupne utrke/etape, može odustati od etape, vidi vlastitu statistiku uspjeha. 
+                <h3>Neregistrirani korisnik</h3>
+                Neregistrirani korisnik vidi samo rang listu prema završenim etapama i galeriju pobjednika.
+            </div>
+            <h2>ERA i navigacijski dijagram</h2>
+            <div>
+                <h3>ERA</h3>
+
+                <a href="slike/era.png" target="_blank"><img src="slike/era.png" alt="era" width="200" height="200"></a>
+                <br>
+                <h3>Navigacijski</h3>
+
+                
+
+            </div>
+            <h2>Opis skripata i mapa</h2>
+            <div>
+                <div>
+                    <h3>css</h3>
+                    <ul>
+                        <li>sve.css => sadrži stil za sve osim zaglavlja</li>
+                        <li>zaglavlje.css => sadrži stil za zaglavlje</li>
+
+                    </ul>
+
+                </div>
+                <div>
+                    <h3>js</h3>
+                    <ul>
+                        <li>dohvati_dnevnik.js => bavi se slanjem, dohvaćanjem i prikazivanjem podataka za prikaz dnevnika</li>
+                        <li>drzave.js => bavi se slanjem, dohvaćanjem i prikazivanjem podataka vezanih za države</li>
+                        <li>etape.js => bavi se slanjem, dohvaćanjem i prikazivanjem podataka vezanih za etape</li>
+                        <li>provjera_prijava.js => bavi se validacijom podataka za prijavu</li>
+                        <li>provjera_registracija.js => bavi se validacijom podataka za registraciju</li>
+                        <li>racuni_korisnika.js => bavi se slanjem, dohvaćanjem i prikazivanjem podataka vezanih za račune korisnika</li>
+                        <li>rang.js => bavi se slanjem, dohvaćanjem i prikazivanjem podataka vezanih za rang listu</li>
+                        <li>statitika_admin.js => bavi se slanjem, dohvaćanjem i prikazivanjem podataka vezanih za statistiku koju pregledava admin</li>
+                        <li>statistika_mod.js => bavi se slanjem, dohvaćanjem i prikazivanjem podataka vezanih za statistiku koju pregledava moderator</li>
+                        <li>statistika_reg.js => bavi se slanjem, dohvaćanjem i prikazivanjem podataka vezanih za statistiku koju pregledava registriran korisnik</li>
+                        <li>utrka.js => bavi se slanjem, dohvaćanjem i prikazivanjem podataka vezanih za vlastite utrke</li><!-- comment -->
+                        <li>utrke.js => bavi se slanjem, dohvaćanjem i prikazivanjem podataka vezanih za utrke</li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h3>php</h3>
+                    <ul>
+                        <li>definiranje_drzave_PRIKAZ.php => prikazuje Smarty predložak za definiranje države</li>
+
+                        <li>definiranje_drzave_azuriraj_drzavu.php => Ažurira državu u bazi</li> 
+                        <li>definiranje_drzave_dodijeli_moderatora_drzavi.php => Dodjeljuje moderatora državi u bazi</li>
+                        <li>definiranje_drzave_dohvati_drzave.php => Dohvaća države iz baze</li>
+                        <li>definiranje_drzave_dohvati_moderatore.php => Dohvaća moderatore iz baze</li> 
+                        <li>definiranje_drzave_unesi_drzavu.php => Unosi naziv države u bazu</li>
+
+                        <li>definiranje_utrke_PRIKAZ.php => prikazuje Smarty predložak za definiranje utrke</li>
+                        <li>definiranje_utrke_azuriraj_utrku.php => Ažurira utrku u bazu</li>
+                        <li>definiranje_utrke_dodaj_utrku.php => Dodaje utrku u bazu</li>
+                        <li>definiranje_utrke_dohvati_utrke.php => Dohvaća utrke iz baze</li>                       
+                        <li>dnenvik_PRIKAZ.php => prikazuje Smarty predložak za dnevnik</li>
+                        <li>dnenvik_dohvati_dnevnik.php => Dohvaća podatke dnevnika iz baze</li>
+                        <li>dnenvik_dohvati_vrijeme.php => Dohvaća filtrirane podatke dnevnika iz baze prema vremenu</li>
+                        <li>dnenvik_dovuci_korisnike.php => Dohvaća korisnike koji su zapisani u dnevniku</li>
+                        <li>dnenvik_dovuci_zapise.php => Dohvaća radnje koje su zapisane u dnevniku</li>
+                        <li>dnenvik_pretrazivanje_po_radnjama.php => Dohvaća filtrirane podatke dnevnika iz baze prema radnjama</li>
+                        <li>dnenvik_pretrazivanje_po_korisnicima.php => Dohvaća filtrirane podatke dnevnika iz baze prema korisnicima</li>
+                        <li>etape_koje_vodim_PRIKAZ.php => prikazuje Smarty predložak za etape koje moderator vodi</li>
+                        <li>etape_koje_vodim_dodaj_novu_etapu.php => Dodaje novu etapu u bazu</li>
+                        <li>etape_koje_vodim_dodaj_sudjeluje.php => Dodaje podatke u tablicu sudjeluje koja reprezentira korisnika koji sudjeluje u etapi</li>
+                        <li>etape_koje_vodim_dovuci_drzave.php => Dohvaća države za koje je moderator zadužen</li>
+                        <li>etape_koje_vodim_dovuci_etape_di_korisnik_sudjeluje.php => Dohvaća etape na kojima korisnik sudjeluje</li>
+                        <li>etape_koje_vodim_dovuci_korisnike.php => Dohvaća korisnike koji sudjeluju na etapi</li>
+                        <li>etape_koje_vodim_dovuci_zakljucane.php => Dohvaća zaključane etape</li>
+                        <li>etape_koje_vodim_prikazi_etape.php => Prikazuje etape po utrci</li>
+                        <li>etape_koje_vodim_prikazi_korisnike_na_utrci.php => Dohvaća korisnike prema utrci</li>
+                        <li>etape_koje_vodim_prikazi_utrke.php => Dohvaća utrke prema državi</li>
+                        <li>etape_koje_vodim_zakljucaj.php => Zaključava odabranu etapu</li>
+
+                        <li>korisnicki_racuni_PRIKAZ.php => prikazuje Smarty predložak za korisničke račune</li>
+                        <li>korisnicki_racuni_blokiraj.php => Blokira korisnički račun</li>
+                        <li>korisnicki_racuni_dohvati_blokirane_racune.php => Dohvaća blokirane račune</li>
+                        <li>korisnicki_racuni_dohvati_neblokirane_racune.php => Dohvaća neblokirane račune</li>
+                        <li>korisnicki_racuni_odblokira.php => Odblokira račun</li>
+                        <li>moja statistika_PRIKAZ.php => prikazuje Smarty predložak za vlastitu statistiku</li>
+                        <li>moja statistika_dovuci_drzave.php => Dohvaća države u kojima je registrirani korisnik sudjelovao</li>
+                        <li>moja statistika_prikazi_prema_drzavi.php => Dohvaća završene etape prema odabranoj državi</li>
+                        <li>odjava.php => Briše korisničku sesiju</li>
+                        <li>prijava.php => prikazuje Smarty predložak za prjavu i provjerava podatke</li>
+                        <li>prijava_na_utrku_PRIKAZ.php => prikazuje Smarty predložak za prijavu na utrku</li>
+                        <li>prijava_na_utrku_azuriraj.php => Ažurira prijavu</li>
+                        <li>prijava_na_utrku_dohvati_validne_utrke.php => Dohvaća buduće i otključane utrke</li>
+                        <li>prijava_na_utrku_dohvati_vaildne_etape.php => Dohvaća buduće i otključane etape</li>
+                        <li>prijava_na_utrku_odustajem.php => Ažurira odustajan je od etape</li>
+                        <li>prijava_na_utrku_pokazi_buduce_etape.php => Pokazuje korisnikove buduće etape</li>
+                        <li>prijava_na_utrku_pokazi_prosle_etape.php => Pokazuje korisnikove prošle etape</li>
+                        <li>prijava_na_utrku_prijavi_me.php => Prijavljuje korisika na utrku</li>
+                        <li>prijava_na_utrku_prijavi_me_na_etapu.php => Prijavljuje korisika na etapu</li>
+                        <li>prijava_na_utrku_prikazi_moje_prijave.php => Prikaazuje prijave na etape</li>
+                        <li>prijava_provjera.php => Provjerava podatke od prijave</li>
+                        <li>rang_lista_PRIKAZ.php => prikazuje Smarty predložak za rang listu</li>
+                        <li>rang_lista_dohvati_vrijeme.php => Dohvaćarang listu po vremenu</li>
+                        <li>rang_lista_prikazi_sve.php => Prikazuje sve rang liste</li>
+                        <li>registracija.php => prikazuje Smarty predložak za registraciju</li>
+                        <li>registracija_provjera.php => Provjerava jel korisničko ime već u bazi</li>
+                        <li>registriraj.php => Unese u bazu podatke</li>
+                        <li>statistika_rada_sustava_PRIKAZ.php => prikazuje Smarty predložak za administratorovu statistiku</li>
+                        <li>statistika_admin_korisnik_uzlazno.php => Dohvaća zapise po korisnicima uzlazno</li>
+                        <li>statistika_admin_korisnik_silazno.php => Dohvaća zapise po korisnicima silazno</li>
+                        <li>statistika_admin_ukupno.php => Dohvaća ukupne zapise dnevnika</li>
+                        <li>statistika_admin_vrijeme_uzlazno.php => Dohvaća zapise po vremenu uzlazno</li>
+                        <li>statistika_admin_vrijeme_silazno.php => Dohvaća zapise po vremenu silazno</li>
+                        <li>statistika_mod_PRIKAZ.php => prikazuje Smarty predložak za moderatorovu statistiku</li>
+                        <li>statistika_mod_odustali.php => Dohvaća odustale od etapa</li>
+                        <li>statistika_mod_ukupno.php => Dohvaća ukupne zapise</li>
+                        <li>statistika_mod_zavrsili.php => Dohvaća završene etape</li>
+                        <li>ukljuci.php => Skripta koja se uključuje u zaglavlju, sadrži kreiranje sesije, https provjeru i vanjske biblioteke, prisutne su dvije zbog problema s putanjama</li>
+                        <li>validacija_koda.php => prikazuje Smarty predložak za validaciju koda i validira korisnika u bazi</li>
+                        <li>zaboravljena.php => Šalje na mail novu generiranu lozinku i ažurira to u bazi</li>
+
+                        <li>zaglavlje.php => Uključeno u svakoj skripti koja nije pozadinska, prikazuje Smarty predložak za zaglavlje, isto postoje dvije zbog problema s putanjama</li>
+                        <li>index.php => Početna stranica, sadrži dokumentaciju i kratko o autoru</li>
+
+                    </ul>
+
+                </div>
+                <div>
+                    <h3>templates</h3>
+                    <ul>
+                        <li>definiranje_drzave => Prikazuje tijelo stranice za definiranje države</li>
+                        <li>definiranje_etape => Prikazuje tijelo stranice za definiranje etape</li>
+                        <li>definiranje_utrke => Prikazuje tijelo stranice za definiranje utrke</li>
+                        <li>dnenvik => Prikazuje tijelo stranice za dnevnik</li>
+                        <li>index.tpl => Prikazuje tijelo stranice za index</li>
+                        <li>korisnicki_racuni.tpl => Prikazuje tijelo stranice za korisničke račune</li>
+                        <li>podnozje.tpl => Prikazujje podnožje</li>
+                        <li>prijava.tpl => Prikazuje tijelo stranice za prijavu</li>
+                        <li>prijava_na_utrku.tpl => Prikazuje tijelo stranice za prijavu na utrku</li>
+                        <li>rang_lista.tpl => Prikazuje tijelo stranice za rang listu</li>
+                        <li>registracija.tpl => Prikazuje tijelo stranice za registraciju</li>
+                        <li>statistika_admin.tpl => Prikazuje tijelo stranice za statistiku rada sustava</li>
+                        <li>statistika_mod.tpl => Prikazuje tijelo stranice za statistiku završenih i odustalih etapa</li>
+                        <li>statistika_reg.tpl => Prikazuje tijelo stranice za statistiku korisnika</li>
+                        <li>validacija_koda.tpl => Prikazuje tijelo stranice za validaciju koda</li>
+                        <li>v+zaglavlje.tpl => Prikazuje zaglavlje</li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+                    <h3>vanjske_biblioteke</h3>
+                    <ul>
+                        <li>FirePHPCore => Biblioteka za konzolni ispis php-a</li>
+                        <li>smarty-4.0.0 => Smarty biblioteka za odvajanje html-a od php-a</li>
+                        <li>baza.class.php => Klasa za rad s bazom</li>
+                        <li>dnenvik.class.php => Klasa za rad s dnevnikom</li>
+                        <li>sesija.class.php => Klasa za rad sa sesijama</li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+            <h2>Opis korištenih alata i tehnologija</h2>
+            <div>
+                <div>
+                    <ul>
+                        <li>NetBeans IDE => Korišten za razvoj projektnog rješenja</li>
+                        <li>Firefox browser => Glavni browser za pregled rješenja</li>
+                        <li>Brave browser => Sporedni browser za pregled rješenja</li>
+                        <li>mysql server => Server korišten za bazu podataka</li>
+                        <li>MySQL Workbench => Alat korišten za definiranje tablica, atributa i veza</li>
+                        <li>phpmyadmin => Korišten za pregled podataka, testiranje upita i izmjena u tablicama </li>
+                        <li>VirtualBox=> Za korištenje operacijskog sustava Linux za realizaciju projekta</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
